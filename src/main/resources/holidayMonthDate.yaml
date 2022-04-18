@@ -1,0 +1,64 @@
+holidayMonthDatesList:
+ - month: 1 #January Month
+   dates:
+   - 1
+ - month: 3 #March month
+   dates:
+   - 28
+   - 29
+ - month: 4 #April month
+   dates:
+   - 1
+   - 30
+ - month: 5 #May Month
+   dates:
+   - 1
+   - 8
+   - 9
+ - month: 6 #June Month
+   dates:
+   - 5
+   - 6
+   - 21
+ - month: 7 #July month
+   dates:
+   - 1
+   - 2
+   - 3
+   - 4
+   - 5
+   - 6
+   - 7
+   - 8
+   - 9
+   - 10
+   - 11
+   - 12
+   - 13
+   - 14
+   - 15
+   - 16
+   - 17
+   - 18
+   - 19
+   - 20
+   - 21
+   - 22
+   - 23
+   - 24
+   - 25
+   - 26
+   - 27
+   - 28
+   - 29
+   - 30
+   - 31
+ - month: 11 #November month
+   dates:
+   - 1
+ - month: 12 #December month
+   dates:
+   - 24
+   - 25
+   - 26
+   - 31
