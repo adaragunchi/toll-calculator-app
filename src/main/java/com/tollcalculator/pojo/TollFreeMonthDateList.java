@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-public class HolidaysMonthDateList {
+public class TollFreeMonthDateList {
    List<HolidayMonthDateObj> holidayMonthDatesList;
 
    @Data

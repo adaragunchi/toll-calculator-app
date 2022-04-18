@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 @Accessors(chain = true)
-public class HolidayMonthDates {
+public class TollFreeMonthDates {
     private Integer month;
     private List<Integer> dates;
 }

@@ -2,7 +2,7 @@ package com.tollcalculator.util;
 
 import com.tollcalculator.pojo.FeeByTimeInterval;
 import com.tollcalculator.pojo.FeeByTimeIntervalList;
-import com.tollcalculator.pojo.HolidaysMonthDateList;
+import com.tollcalculator.pojo.TollFreeMonthDateList;
 import org.yaml.snakeyaml.TypeDescription;
 import org.yaml.snakeyaml.Yaml;
 import org.yaml.snakeyaml.constructor.Constructor;
@@ -63,12 +63,12 @@ public class LoadDataFromYmlFile {
     public static void loadHolidayDatesFromYaml() {
         try (InputStream in = LoadDataFromYmlFile.class.getResourceAsStream(HOLIDAY_MONTH_DATE_LIST_YAML_FILE)) {
 
-            Constructor constructor = new Constructor(HolidaysMonthDateList.class);
-            TypeDescription configDesc = new TypeDescription(HolidaysMonthDateList.class);
-            configDesc.putListPropertyType("holidayMonthDatesList", HolidaysMonthDateList.HolidayMonthDateObj.class);
+            Constructor constructor = new Constructor(TollFreeMonthDateList.class);
+            TypeDescription configDesc = new TypeDescription(TollFreeMonthDateList.class);
+            configDesc.putListPropertyType("holidayMonthDatesList", TollFreeMonthDateList.HolidayMonthDateObj.class);
             constructor.addTypeDescription(configDesc);
             Yaml yaml = new Yaml(constructor);
-            HolidaysMonthDateList list = yaml.load(in);
+            TollFreeMonthDateList list = yaml.load(in);
 
             list.getHolidayMonthDatesList()
                     .stream()
